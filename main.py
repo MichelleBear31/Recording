@@ -36,7 +36,7 @@ def record_audio_to_file(filename, duration=1, channels=1, rate=44100, frames_pe
 
 @app.route('/')
 def index():
-     return render_template('Recording.html')
+     return render_template('index.html')
 
 @app.route('/start_recording', methods=['POST'])
 def start_recording():
