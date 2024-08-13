@@ -1,13 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
 <head>
-    <title>Recording</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>錄音介面</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
 </head>
 <body>
-    <h1>請輸入你的名稱，並按下"開始錄音"</h1>
-    <h1>錄音時長為1秒</h1>
-    <input type="text" id="username" placeholder="請輸入你的名稱">
-    <button onclick="startRecording()">開始錄音</button>
+    <div class="container">
+        <h1 class="title">錄音系統</h1>
+        <p class="subtitle">請輸入你的名稱，並按下"開始錄音"</p>
+        <p class="instruction">錄音時長為1秒</p>
+        <input type="text" id="username" class="input-field" placeholder="請輸入你的名稱">
+        <button class="record-button" onclick="startRecording()">開始錄音</button>
+    </div>
+    
     <script>
         function startRecording() {
             const username = document.getElementById('username').value;
